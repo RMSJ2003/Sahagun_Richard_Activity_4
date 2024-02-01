@@ -1,0 +1,77 @@
+:root {
+    --main-color: #F8F8F8;
+    --main-font: 'Montserrat', sans-serif;
+    /* --secondary-color: #F1D6AB; */
+    --main-font-color: #E3B04B; 
+    --edge-margin: 40px;
+    --nav-bar-height: 80px;
+}
+
+body {
+    background-color: var(--main-color);
+    margin: 0;
+}
+
+
+/* Navigation Bar */
+
+.top-nav {
+    z-index: 1;
+    background-color: var(--main-color);
+    float: left;
+    position: fixed;
+    height: var(--nav-bar-height);
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Set the shadow properties */
+}
+
+.nav-item {
+    float: right;
+    font-size: 20px;
+    font-family: var(--main-font);
+    text-decoration: none;
+    margin: 30px var(--edge-margin) 30px auto;
+    font-weight: bold;
+    color: var(--main-font-color);
+}
+
+h1 {
+    float: left;
+    margin-left: var(--edge-margin);
+}
+
+h1 > a {
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+
+/* About Me Section */
+
+.about-me-section {
+    z-index: -1;
+    float: left;
+    width: 100%;
+    height: 800px;
+    margin-top: var(--nav-bar-height);
+}
+
+.name {
+    float: left;
+    font-size: 60px;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
+
+.short-desc {
+    float: left;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    font-weight: lighter;
+    width: 40%;
+}
+
+/* .description {
+    float: left;
+} */
