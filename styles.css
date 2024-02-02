@@ -239,3 +239,61 @@ h1>a {
 .about-me-button.spacing {
     margin-top: var(--spacing);
 }
+
+
+/* ABOUT ME PAGE */
+/* About Me Section */
+.about-me-section-1 {
+    z-index: -1;
+    float: left;
+    width: 100%;
+    height: 600px;
+    margin-top: var(--nav-bar-height);
+    background-color: var(--main-color);
+}
+
+.about-me-section-1 > .text-container {
+    float: right;
+    width: 45%;
+    height: 100%;
+    margin-left: var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.about-me-section-1 > .image-container {
+    float: left;
+    width: 45%;
+    height: 100%;
+    margin-left: var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* IT ME section */
+.about-me-section-2 {
+    z-index: -1;
+    float: left;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    text-align: center;
+}
+
+.about-me-section-2 > .text-container {
+    float: left;
+    width: 94.75%;
+    margin: var(--container-y-margin) var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me-section-2 > .image-container {
+    float: left;
+    width: 94.75%;
+    margin: auto var(--edge-margin) var(--container-y-margin) var(--edge-margin);
+    align-items: center;
+}
