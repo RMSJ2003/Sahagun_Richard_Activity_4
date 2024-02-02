@@ -82,7 +82,7 @@ h1>a {
     margin: 0;
 }
 
-.short-desc-p {
+.description-container > short-desc-p {
     float: left;
     font-family: var(--secondary-font);
     color: var(--secondary-color);
@@ -180,6 +180,15 @@ h1>a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.family-section-text > .short-desc-p {
+    float: left;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-weight: lighter;
+    width: 50%;
+    margin: var(--spacing) auto;
+}
+
 
 /* Family Section: Image Part */
 .family-section-image {
@@ -256,7 +265,7 @@ h1>a {
     float: right;
     width: 45%;
     height: 100%;
-    margin-left: var(--edge-margin);
+    margin-right: var(--edge-margin);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -297,3 +306,87 @@ h1>a {
     margin: auto var(--edge-margin) var(--container-y-margin) var(--edge-margin);
     align-items: center;
 }
+
+
+/* MY FAMILY PAGE */
+/* Family Section: Text */
+.family-section-1 {
+    z-index: -1;
+    float: left;
+    width: 100%;
+    height: auto;
+    margin-top: var(--nav-bar-height);
+    background-color: var(--main-color);
+}
+
+.family-section-1-text {
+    float: left;
+    width: 94.75%;
+    margin: var(--container-y-margin) var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.family-section-1-p {
+    float: left;
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+    font-weight: lighter;
+    width: 50%;
+    margin: var(--spacing) auto 0 auto;
+    text-align: center;
+}
+
+.family-section-1-text > .heading {
+    margin:0;
+}
+
+
+/* Family Section: Images */
+.family-section-1-images {
+    float: left;
+    width: 94.75%;
+    margin: 0 var(--edge-margin);
+    display: flex;
+    justify-content: space-between;
+}
+
+.family-section-1-images > .family-image-container {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 400px;
+}
+
+.family-member-img {
+    float: left;
+    width: 400px;
+    height: 400px;
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);   
+}
+
+.family-section-1-images.spacing {
+    margin-top: var(--container-y-margin);
+    margin-bottom: var(--container-y-margin );
+}
+
+.family-image-container > h2 {
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    text-align: center;
+    margin: var(--spacing) auto 0 auto;
+}
+
+.family-image-container > h3 {
+    font-family: var(--secondary-font);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.family-image-container > p {
+    margin: var(--spacing) auto 0 auto;
+    text-align: center;
+} 
