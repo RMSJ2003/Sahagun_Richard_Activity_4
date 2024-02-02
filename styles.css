@@ -180,6 +180,7 @@ h1>a {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+
 /* Family Section: Image Part */
 .family-section-image {
     float: left;
@@ -197,4 +198,44 @@ h1>a {
 .family-button:hover {
     color: var(--lighter-main-font-color);
     transition: .5s;
+}
+
+
+/* School Section */
+.school-section {
+    z-index: -1;
+    float: left;
+    width: 100%;
+    height: 600px;
+    background-color: var(--main-color);
+}
+
+
+/* School Section: Text Part */
+
+.school-text-container {
+    float: left;
+    width: 50%;
+    height: 100%;
+    margin-left: var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* School Section: Image Part */
+
+.school-image-container {
+    float: right;
+    width: 40%;
+    height: 100%;
+    margin-right: var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.about-me-button.spacing {
+    margin-top: var(--spacing);
 }
