@@ -3,6 +3,7 @@
     --main-font: 'Montserrat', sans-serif;
     --secondary-color: #2B2B28;
     --lighter-secondary-color: #53534e;
+    --tertiary-color: #F1D6AB;
     --secondary-font: 'Merriweather', serif;
     /* --secondary-color: #F1D6AB; */
     --main-font-color: #E3B04B;
@@ -10,13 +11,20 @@
     --edge-margin: 40px;
     --nav-bar-height: 80px;
     --spacing: 20px;
+    --container-y-margin: 50px;
 }
 
 body {
-    background-color: var(--main-color);
     margin: 0;
 }
 
+
+/* Formats */
+.heading {
+    font-size: 60px;
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
 
 /* Navigation Bar */
 
@@ -57,22 +65,20 @@ h1>a {
     text-decoration: none;
 }
 
-
-/* About Me Section: Description Part */
-
+/* About Me Section */
 .about-me-section {
     z-index: -1;
     float: left;
     width: 100%;
     height: 600px;
     margin-top: var(--nav-bar-height);
+    background-color: var(--main-color);
 }
 
-.name {
+/* About Me: Description Part */
+
+.heading.name {
     float: left;
-    font-size: 60px;
-    font-family: var(--main-font);
-    color: var(--main-font-color);
     margin: 0;
 }
 
@@ -83,6 +89,7 @@ h1>a {
     font-weight: lighter;
     width: 100%;
     margin: var(--spacing) auto;
+
 }
 
 .description-container {
@@ -104,6 +111,8 @@ h1>a {
     padding: 15px 25px;
     font-weight: bold;
     width: 91px;
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .about-me-button:hover {
@@ -130,4 +139,62 @@ h1>a {
     height: 500px;
     /* Shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Family Section */
+.family-section {   
+    z-index: -1;
+    float: left;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    text-align: center;
+}
+
+
+/* Family Section: Text Part*/
+.family-section-text {
+    float: left;
+    width: 94.75%;
+    margin: var(--container-y-margin) var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+}
+
+.heading.meet-family-text {
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+.family-button {
+    font-family: var(--main-font);
+    text-decoration: none;
+    float: left;
+    background-color: var(--secondary-color);
+    color: var(--main-font-color);
+    padding: 15px 25px;
+    font-weight: bold;
+    width: 136px;
+    align-self: center;
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Family Section: Image Part */
+.family-section-image {
+    float: left;
+    width: 94.75%;
+    margin: auto var(--edge-margin) var(--container-y-margin) var(--edge-margin);
+}
+
+.family-picture {
+    width: 800px;
+    height: 500px;
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.family-button:hover {
+    color: var(--lighter-main-font-color);
+    transition: .5s;
 }
