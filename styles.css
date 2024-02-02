@@ -1,10 +1,15 @@
 :root {
     --main-color: #F8F8F8;
     --main-font: 'Montserrat', sans-serif;
+    --secondary-color: #2B2B28;
+    --lighter-secondary-color: #53534e;
+    --secondary-font: 'Merriweather', serif;
     /* --secondary-color: #F1D6AB; */
-    --main-font-color: #E3B04B; 
+    --main-font-color: #E3B04B;
+    --lighter-main-font-color: #F1D6AB;
     --edge-margin: 40px;
     --nav-bar-height: 80px;
+    --spacing: 20px;
 }
 
 body {
@@ -17,12 +22,13 @@ body {
 
 .top-nav {
     z-index: 1;
-    background-color: var(--main-color);
+    background-color: var(--secondary-color);
     float: left;
     position: fixed;
     height: var(--nav-bar-height);
     width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Set the shadow properties */
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .nav-item {
@@ -35,25 +41,30 @@ body {
     color: var(--main-font-color);
 }
 
+.nav-item:hover {
+    color: var(--lighter-main-font-color);
+    transition: .5s;
+}
+
 h1 {
     float: left;
     margin-left: var(--edge-margin);
 }
 
-h1 > a {
+h1>a {
     font-family: var(--main-font);
     color: var(--main-font-color);
     text-decoration: none;
 }
 
 
-/* About Me Section */
+/* About Me Section: Description Part */
 
 .about-me-section {
     z-index: -1;
     float: left;
     width: 100%;
-    height: 800px;
+    height: 600px;
     margin-top: var(--nav-bar-height);
 }
 
@@ -62,16 +73,61 @@ h1 > a {
     font-size: 60px;
     font-family: var(--main-font);
     color: var(--main-font-color);
+    margin: 0;
 }
 
-.short-desc {
+.short-desc-p {
     float: left;
-    font-family: var(--main-font);
-    color: var(--main-font-color);
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
     font-weight: lighter;
-    width: 40%;
+    width: 100%;
+    margin: var(--spacing) auto;
 }
 
-/* .description {
+.description-container {
     float: left;
-} */
+    width: 45%;
+    height: 100%;
+    margin-left: var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-me-button {
+    font-family: var(--main-font);
+    text-decoration: none;
+    float: left;
+    background-color: var(--secondary-color);
+    color: var(--main-font-color);
+    padding: 15px 25px;
+    font-weight: bold;
+    width: 91px;
+}
+
+.about-me-button:hover {
+    color: var(--lighter-main-font-color);
+    transition: .5s;
+}
+
+
+/* About Me Section: Image Part */
+
+.image-container {
+    float: right;
+    width: 45%;
+    height: 100%;
+    margin-right: var(--edge-margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.my-picture {
+    width: 500px;
+    height: 500px;
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
