@@ -114,7 +114,6 @@ h1>a {
     /* Shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-
 .about-me-button:hover {
     color: var(--lighter-main-font-color);
     transition: .5s;
@@ -247,8 +246,21 @@ h1>a {
 
 .about-me-button.spacing {
     margin-top: var(--spacing);
+    font-family: var(--main-font);
+    text-decoration: none;
+    float: left;
+    background-color: var(--secondary-color);
+    color: var(--main-font-color);
+    padding: 15px 25px;
+    font-weight: bold;
+    width: 120px;
+    /* Shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
+.about-me-button.spacing:hover {
+    color: var(--lighter-main-font-color);
+}
 
 /* ABOUT ME PAGE */
 /* About Me Section */
