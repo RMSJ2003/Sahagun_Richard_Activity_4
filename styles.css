@@ -201,6 +201,7 @@ h1>a {
     width: 500px;
     height: 500px;
     /* Shadow */
+    object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -385,6 +386,7 @@ h1>a {
     float: left;
     width: 400px;
     height: 400px;
+    object-fit: cover;
     /* Shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);   
 }
@@ -476,6 +478,7 @@ h1>a {
 .my-picture {
     width: 500px;
     height: 500px;
+    object-fit:cover;
     /* Shadow */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
